@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loud</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Programação</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Nossos Jogadores</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Links de Lojas Parceiras</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Business</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Design & UX</a>
+        </li>
+      </ul>
+      <img src="data:image/png;base64,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" alt="Logo da Alurabooks" class="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+    <p class="banner__texto">Encontre em nosso site tudo o que precisa para seu desenvolvimento nos jogos!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual é a boa?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos lançamentos</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/elto.jpeg"
+            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+        <div class="swiper-slide"><img src="img/download.jpeg"
+            alt="Livro sobre liderança em design design da alura books"></div>
+        <div class="swiper-slide"><img src="img/fb38aae310032787aa85edfdeaf655b6_tn.jpeg" alt="Livro sobre javascript assertivo da alura books">
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Guia Front-end.svg" alt="Livro Guia front end" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Portugol.svg" alt="Livro sobre portugol" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Acessibilidade.svg" alt="Livro sobre acessibilidade" />
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
